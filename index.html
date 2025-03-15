@@ -3,6 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dashboard Miner Control - O sistema completo para gerenciamento de mineração de criptomoedas.">
+  <meta name="keywords" content="mineração, criptomoedas, Monero, XMR, dashboard, gerenciamento, segurança, automação">
+  <meta name="author" content="Seu Nome ou Empresa">
+  <meta property="og:title" content="Dashboard Miner Control">
+  <meta property="og:description" content="O sistema definitivo para gerenciamento de mineração de criptomoedas.">
+  <meta property="og:image" content="https://watcher.guru/news/wp-content/uploads/2022/09/Monero-xrm-e1660379662998-800x450.jpg">
+  <meta property="og:url" content="https://seudominio.com">
+  <link rel="icon" type="image/png" href="https://cryptologos.cc/logos/monero-xmr-logo.png">
   <title>Dashboard Miner Control - Apresentação Profissional</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
@@ -52,6 +60,19 @@
       padding: 80px 0;
       margin-bottom: 60px;
       animation: fadeIn 2s ease-in-out;
+
+      position: relative;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 15px;
     }
 
     header h1 {
@@ -62,6 +83,8 @@
       -webkit-text-fill-color: transparent;
       margin-bottom: 20px;
       animation: slideIn 1.5s ease-in-out;
+      position: relative;
+      z-index: 1;
     }
 
     header p {
@@ -69,6 +92,8 @@
       opacity: 0.9;
       color: #ccc;
       animation: fadeIn 2.5s ease-in-out;
+      position: relative;
+      z-index: 1;
     }
 
     .features, .technologies, .cta {
@@ -132,8 +157,11 @@
     }
 
     .cta h2 {
-      color: #0a0a0a;
+      color: #0a0a0a; /* Texto preto */
       margin-bottom: 30px;
+      font-weight: 700;
+      position: relative;
+      z-index: 1;
     }
 
     .cta a {
@@ -235,10 +263,7 @@
       </div>
     </section>
 
-    <section class="cta">
-      <h2>Pronto para revolucionar sua mineração?</h2>
-      <a href="#contact">Solicitar Demonstração</a>
-    </section>
+
   </div>
 </body>
 </html>
