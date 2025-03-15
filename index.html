@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Miner Control - Apresentação Profissional</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* Reset CSS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0a0a0a;
+      color: #fff;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Fundo Animado */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle, rgba(20, 20, 20, 0.8), rgba(10, 10, 10, 1));
+      z-index: -1;
+      animation: pulseBackground 10s infinite alternate;
+    }
+
+    @keyframes pulseBackground {
+      0% { opacity: 0.8; }
+      100% { opacity: 1; }
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px;
+      position: relative;
+      z-index: 1;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 0;
+      margin-bottom: 60px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #ff6f61, #ffcc00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 20px;
+      animation: slideIn 1.5s ease-in-out;
+    }
+
+    header p {
+      font-size: 1.4rem;
+      opacity: 0.9;
+      color: #ccc;
+      animation: fadeIn 2.5s ease-in-out;
+    }
+
+    .features, .technologies, .cta {
+      margin-bottom: 80px;
+    }
+
+    .features h2, .technologies h2, .cta h2 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 40px;
+      background: linear-gradient(135deg, #ff6f61, #ffcc00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      animation: slideIn 1s ease-in-out;
+    }
+
+    .feature-grid, .tech-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .feature-card, .tech-card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .feature-card:hover, .tech-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(255, 111, 97, 0.2);
+    }
+
+    .feature-card i, .tech-card i {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #ff6f61;
+    }
+
+    .feature-card h3, .tech-card h3 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #fff;
+    }
+
+    .feature-card p, .tech-card p {
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+
+    .cta {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #ff6f61, #ffcc00);
+      border-radius: 15px;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    .cta h2 {
+      color: #0a0a0a;
+      margin-bottom: 30px;
+    }
+
+    .cta a {
+      display: inline-block;
+      padding: 15px 40px;
+      background: #0a0a0a;
+      color: #ffcc00;
+      text-decoration: none;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .cta a:hover {
+      background: #ffcc00;
+      color: #0a0a0a;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 3rem;
+      }
+
+      .feature-grid, .tech-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Dashboard Miner Control</h1>
+      <p>O sistema definitivo para gerenciamento de mineração de criptomoedas.</p>
+    </header>
+
+    <section class="features">
+      <h2>Recursos Principais</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <i class="fas fa-microchip"></i>
+          <h3>Suporte a CPU e GPU</h3>
+          <p>Otimização dinâmica para qualquer hardware, com suporte a mineração em VPS e contêineres Docker.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-tachometer-alt"></i>
+          <h3>Monitoramento em Tempo Real</h3>
+          <p>Acompanhe hashrate, uso de recursos, temperatura e status dos mineradores em tempo real.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-shield-alt"></i>
+          <h3>Segurança Avançada</h3>
+          <p>Criptografia de ponta a ponta, autenticação multifator (MFA) e proteção contra ataques DDoS.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-wallet"></i>
+          <h3>Integração com Carteiras</h3>
+          <p>Vinculação com Binance, Coinbase e outras carteiras populares para automação de pagamentos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="technologies">
+      <h2>Tecnologias Utilizadas</h2>
+      <div class="tech-grid">
+        <div class="tech-card">
+          <i class="fab fa-python"></i>
+          <h3>Python & Flask</h3>
+          <p>Back-end robusto e escalável para gerenciamento de dados e APIs.</p>
+        </div>
+        <div class="tech-card">
+          <i class="fas fa-database"></i>
+          <h3>MongoDB</h3>
+          <p>Banco de dados NoSQL para armazenamento dinâmico e eficiente.</p>
+        </div>
+        <div class="tech-card">
+          <i class="fab fa-docker"></i>
+          <h3>Docker</h3>
+          <p>Contêinerização para fácil implantação e escalabilidade.</p>
+        </div>
+        <div class="tech-card">
+          <i class="fas fa-shield-alt"></i>
+          <h3>OAuth2 & MFA</h3>
+          <p>Autenticação segura via GitHub, Google e Microsoft com MFA.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Pronto para revolucionar sua mineração?</h2>
+      <a href="#contact">Solicitar Demonstração</a>
+    </section>
+  </div>
+</body>
+</html>
